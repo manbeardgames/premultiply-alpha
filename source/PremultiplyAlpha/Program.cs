@@ -67,6 +67,18 @@ namespace PremultiplyAlpha
                 throw new Exception("[output] path must be an absolute path. Relative paths are not accepted.");
             }
 
+            //  Ensure the input file or directory exists
+            bool exists = File.Exists(_inputPath);
+            if(!exists)
+            {
+                exists = Directory.Exists(_inputPath);
+            }
+
+            if(!exists)
+            {
+                throw new Exception($"[input] does not exist. Path given was {_inputPath}");
+            }
+
             //  Determine if the input path is a directory
             FileAttributes inputAttributes = File.GetAttributes(_inputPath);
             bool isDirectory = (inputAttributes & FileAttributes.Directory) == FileAttributes.Directory;
@@ -74,11 +86,10 @@ namespace PremultiplyAlpha
 
             if (isDirectory)
             {
-                //  If the input path is a directory, then the output path must also be a directory.
-                FileAttributes outputAttributes = File.GetAttributes(_outputPath);
-                if ((outputAttributes & FileAttributes.Directory) != FileAttributes.Directory)
+                //  Ensure the directory exists
+                if (!Directory.Exists(_outputPath))
                 {
-                    throw new Exception("If [input] path is a directory, then [output] must also be a directory");
+                    Directory.CreateDirectory(_outputPath);
                 }
 
                 //  Since Directory.GetFiles doesn't accept multiple file type search patterns,
@@ -100,13 +111,6 @@ namespace PremultiplyAlpha
             }
             else
             {
-                //  Since input was a file, then the output path must also be a file
-                FileAttributes outputAttributes = File.GetAttributes(_outputPath);
-                if ((outputAttributes & FileAttributes.Directory) == FileAttributes.Directory)
-                {
-                    throw new Exception("If [input] is a file, then [output] path must also be a file");
-                }
-
                 //  Process the file
                 PremultiplyAlpha(_inputPath, _outputPath);
             }

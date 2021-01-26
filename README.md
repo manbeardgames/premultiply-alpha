@@ -14,6 +14,8 @@ Both `[input]` and `[output]` must be absolute paths, relative paths are not acc
 
 You can use a directory path for `[input]` to process multiple files in a directory as a batch, but when doing this `[output]` must also be a directory.
 
+
+### Windows Examples
 **Single file process example**
 ```
 premultiplyalpha.exe "C:\Users\UserName\Desktop\image.png" "C:\Users\UserName\Desktop\premultiplied_image.png"
@@ -22,6 +24,17 @@ premultiplyalpha.exe "C:\Users\UserName\Desktop\image.png" "C:\Users\UserName\De
 **Directory/batch process example**
 ```
 premultiplyalpha.exe "C:\Users\UserName\Desktop\Images\" "C:\Users\UserName\Desktop\ProcessedImages\"
+```
+
+### OSX/Linux Examples
+**Single file process example**
+```
+premultiplyalpha.exe "/Users/UserName/Desktop/image.png" "Users/UserName/Desktop/premultiplied_image.png"
+```
+
+**Directory/batch process example**
+```
+premultiplyalpha.exe "/Users/UserName/Desktop/Images/" "/Users/UserName/Desktop/ProcessedImages/"
 ```
 
 ## Third Party Libraries

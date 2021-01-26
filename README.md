@@ -1,9 +1,18 @@
 # Premultiply Alpha
 This is a command line (CLI) application that will preform alpha premultiplication on the color data in an image file.  One use for this, which is why I made it, is to premultiply the color data of the [BMFont]() exported PNG file.
 
-## Usage
-Download the current build of the application from the releases page and extract the exe, or clone the source of this repository with `git clone https://github.com/manbeardgames/premultiply-alpha.git` and build from source.
+## Download
+You can download the current build of the application for your operating system from the [releases](https://github.com/manbeardgames/premultiply-alpha/releases/tag/v1.0.0) page.
 
+Alternatively, if you wish to build from source, first clone the repository with the following command
+
+```
+git clone https://github.com/manbeardgames/premultiply-alpha.git
+```
+
+Then execute the **build.sh** file to build from source.  Once built, locate the new **/build** directory.  Inside this directory will be four directories. The executable you need is based on the operating system you are using.
+
+## Usage
 The following is the syntax for using the exe from a CLI.
 
 ```sh

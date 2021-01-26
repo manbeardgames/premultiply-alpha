@@ -1,0 +1,4 @@
+dotnet publish "./source/PremultiplyAlpha/PremultiplyAlpha.csproj" --output "./build/win-x86/" -c Release -r win-x86 -p:PublishReadyToRun=false -p:PublishSingleFile=true -p:PublishTrimmed=true --self-contained
+dotnet publish "./source/PremultiplyAlpha/PremultiplyAlpha.csproj" --output "./build/win-x64/" -c Release -r win-x64 -p:PublishReadyToRun=false -p:PublishSingleFile=true -p:PublishTrimmed=true --self-contained
+dotnet publish "./source/PremultiplyAlpha/PremultiplyAlpha.csproj" --output "./build/osx-x64/" -c Release -r osx-x64 -p:PublishReadyToRun=false -p:PublishSingleFile=true -p:PublishTrimmed=true --self-contained
+dotnet publish "./source/PremultiplyAlpha/PremultiplyAlpha.csproj" --output "./build/linux-x64/" -c Release -r linux-x64 -p:PublishReadyToRun=false -p:PublishSingleFile=true -p:PublishTrimmed=true --self-contained

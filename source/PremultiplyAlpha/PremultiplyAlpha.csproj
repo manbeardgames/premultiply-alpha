@@ -3,6 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>premultiplyalpha</AssemblyName>
+    <Authors>Christopher Whitley</Authors>
+    <Company>ManBeardGames</Company>
+    <Description>CLI application used to premultiply the color data of image files.</Description>
+    <Copyright>Copyright (c) 2020 Christopher Whitley</Copyright>
+    <PackageProjectUrl>https://github.com/manbeardgames/premultiply-alpha</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/manbeardgames/premultiply-alpha</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,8 +1,7 @@
 {
   "profiles": {
     "PremultiplyAlpha": {
-      "commandName": "Project",
-      "commandLineArgs": "\"C:\\Users\\Dart\\Desktop\\image-test\\input\" \"C:\\Users\\Dart\\Desktop\\image-test\\output\""
+      "commandName": "Project"
     }
   }
 }

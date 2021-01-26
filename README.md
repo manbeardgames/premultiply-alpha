@@ -50,8 +50,8 @@ premultiplyalpha.exe "/Users/UserName/Desktop/Images/" "/Users/UserName/Desktop/
 This application uses [StbImageSharp](https://github.com/StbSharp/StbImageSharp) and [StbImageWriteSharp](https://github.com/StbSharp/StbImageWriteSharp) to process the images and write them back to disk.
 
 ## Sponsor On GitHub
-[![](https://raw.githubusercontent.com/manbeardgames/monogame-aseprite/gh-pages-develop/static/img/github_sponsor.png)](https://github.com/sponsors/manbeardgames)
- Hi, my name is Christopher Whitley. I am an indie game developer and game development tool developer. I create tools primary for the MonoGame framework. All of the tools I develop are released as free and open-sourced software (FOSS), just like this **Monogame.Aseprite** library.
+[![](https://raw.githubusercontent.com/manbeardgames/monogame-aseprite/gh-pages-develop/static/img/github_sponsor.png)](https://github.com/sponsors/manbeardgames)  
+ Hi, my name is Christopher Whitley. I am an indie game developer and game development tool developer. I create tools primary for the MonoGame framework. All of the tools I develop are released as free and open-sourced software (FOSS), just like this tool.
 
  If you'd like to buy me a cup of coffee or just sponsor me and my projects in general, you can do so on [GitHub Sponsors](https://github.com/sponsors/manbeardgames).
 

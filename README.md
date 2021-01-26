@@ -1,5 +1,5 @@
 # Premultiply Alpha
-This is a command line (CLI) application that will preform alpha premultiplication on the color data in an image file.  One use for this, which is why I made it, is to premultiply the color data of the [BMFont]() exported PNG file.
+This is a command line (CLI) application that will preform alpha premultiplication on the color data in an image file.  One use for this, which is why I made it, is to premultiply the color data of the [BMFont](https://www.angelcode.com/products/bmfont/) exported PNG file.
 
 ## Download
 You can download the current build of the application for your operating system from the [releases](https://github.com/manbeardgames/premultiply-alpha/releases/tag/v1.0.0) page.
@@ -47,7 +47,7 @@ premultiplyalpha.exe "/Users/UserName/Desktop/Images/" "/Users/UserName/Desktop/
 ```
 
 ## Third Party Libraries
-This application uses [StbImageSharp]() and [StbImageWriteSharp]() to process the images and write them back to disk.
+This application uses [StbImageSharp](https://github.com/StbSharp/StbImageSharp) and [StbImageWriteSharp](https://github.com/StbSharp/StbImageWriteSharp) to process the images and write them back to disk.
 
 ## Sponsor On GitHub
 [![](https://raw.githubusercontent.com/manbeardgames/monogame-aseprite/gh-pages-develop/static/img/github_sponsor.png)](https://github.com/sponsors/manbeardgames)
